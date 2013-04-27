@@ -1,12 +1,8 @@
-#!/usr/bin/perl
-
-use strict;
-
-use LittleORM::Db ();
-use LittleORM::Db::Field ();
-
+use LittleORM::Db;
+use LittleORM::Db::Field;
 
 package LittleORM::Model;
+
 use Moose;
 use Moose::Util::TypeConstraints;
 
@@ -1115,9 +1111,9 @@ fhFwaEknUtY5xwNr:
 						      $dbh );
 			} else
 			{
-				$op = 'IN';
-				$val = sprintf( '(%s)', join( ',', map { &LittleORM::Db::dbq( &__prep_value_for_db( $class_attr, $_ ),
-											$dbh ) } @{ $val } ) );
+				my @values = map { &__prep_value_for_db( $class_attr, $_ ) } @{ $val };
+				$val = sprintf( 'ANY(%s)', &ORM::Db::dbq( \@values, $dbh ) );
+
 			}
 
 		} else
