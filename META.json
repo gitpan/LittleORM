@@ -4,7 +4,7 @@
       "Eugene Kuzin <eugenek@45-98.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.130880",
    "license" : [
       "unknown"
    ],
@@ -22,25 +22,25 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::More" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
          "requires" : {
-            "Carp::Assert" : 0,
-            "List::MoreUtils" : 0,
-            "Moose" : 0,
-            "Moose::Util::TypeConstraints" : 0,
-            "Scalar::Util" : 0,
+            "Carp::Assert" : "0",
+            "List::MoreUtils" : "0",
+            "Moose" : "0",
+            "Moose::Util::TypeConstraints" : "0",
+            "Scalar::Util" : "0",
             "perl" : "5.006"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.07"
+   "version" : "0.08"
 }
