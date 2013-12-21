@@ -1,5 +1,5 @@
 ---
-abstract: 'ORM for Perl with Moose.'
+abstract: unknown
 author:
   - 'Eugene Kuzin <eugenek@45-98.org>'
 build_requires:
@@ -24,4 +24,4 @@ requires:
   Moose::Util::TypeConstraints: 0
   Scalar::Util: 0
   perl: 5.006
-version: 0.12
+version: 0.13
