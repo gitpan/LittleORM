@@ -24,4 +24,4 @@ requires:
   Moose::Util::TypeConstraints: 0
   Scalar::Util: 0
   perl: 5.006
-version: 0.14
+version: 0.15
